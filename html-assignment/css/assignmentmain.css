@@ -3,7 +3,7 @@ body{
     font-size: 18px;
 }
 header,footer{
-    background-color: rgb(228, 87, 46)
+    background-color: rgb(228, 87, 46);
 }
 .site-title{
     color: rgb(116, 34, 108);
@@ -15,7 +15,7 @@ header,footer{
     list-style-type: square;
 }
 .hobbies-list li:nth-child(odd){
-    background-color: rgb(72, 190, 255);
+    background: aqua;   
 }
 .navigation1{
 text-decoration: none;
