@@ -1,0 +1,229 @@
+
+/* background-color: #AAD4CE; */
+
+/* header{ color: #DEE9D7; */
+/* body {
+    
+    margin: 0;
+    padding: 0;
+    
+} */
+ /* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* CSS coding */
+/* midterm */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #AAD4CE;
+    font-weight: bold;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    
+}
+/* Some settings about the header */
+header {
+    background: url('image.png') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 50px;
+}
+
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background-color:#DEE9D7;
+    padding: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+}
+.naviga{
+    font-weight: bolder;
+    color: black;
+    font-family: serif;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+/* Modify the line height of the first paragraph */
+.life {
+    line-height: 1.5;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Navigation settings */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 70px;
+}
+
+nav ul li a {
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  
+}
+
+main {
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+/* modify the titles of each section */
+
+main .life h2, main .facts h3, main .contact h3 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+
+}
+
+/* modify the contents of each section */
+main .life p {
+    text-align: justify;
+    color:black;
+    margin-top: 10px;
+}
+
+main .facts ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: black;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+main .contact form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+main .contact label {
+    margin-top: 10px;
+    color: black;
+}
+
+main .contact input, main .contact textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+main .contact textarea {
+    resize: vertical;
+}
+.question{
+    font-size: 100;
+    margin-top: 10px;
+    color: black;
+
+}
+
+/* button design  */
+.send-button {
+    display: block;
+    width: 60px;
+    height: 35px;
+    background-color: #DEE9D7;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin: 0 auto;
+    position: relative;right: 510px;
+    margin-top: 10px;
+    
+}
+
+main .contact button:hover {
+    background-color: #729a99;opacity: 1;
+}
+/* the box frame of the question form/ */
+.wrapper{
+    border: 2px solid black;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 18px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+}
+
+footer {
+    text-align:right;
+    padding: 10px 0;
+    color: black;
+}
