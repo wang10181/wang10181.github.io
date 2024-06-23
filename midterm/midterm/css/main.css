@@ -66,15 +66,20 @@ body{
 header {
     background-image: url("../images/lone-starfish-wide.jpg");
     background-size: cover;
+    background-position: top center;
+    margin-left: 15%;
     width: 70%;
     height: 300px;
     display: flex;
     color: white;
     justify-content: center;
     align-items: center;
-    position: relative;left:244px;
+    background-image:center;
+    background-repeat: no-repeat;
     font-size: 60px;
-    margin: 0 auto;
+
+
+
 }
 
 /* main content setting */
