@@ -134,30 +134,35 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    width: 100%;
    
+}
+nav ul li{
+    flex: 1;
 }
 
 
 /* navigation lines setting  */
 nav ul li a {
+  
+    /* text-align: center; */
     text-decoration-line: none;
     color: black;
     font-size: 30px;
     cursor: pointer;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+nav ul li:nth-child(2){
     border-left: 1px solid black;
-    margin-left: 55px;
-    padding-left: 50px;
-    padding-right: 60px;
-    
-  
+    border-right: 1px solid black;
 }
-.home{
-    border-left: none;
-}
-.story{
-    margin-left: 100px;
-    padding-right: 30px;
-}
+
+
 
 main {
     padding: 20px;
@@ -196,6 +201,7 @@ main .contact form {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    row-gap: 10px;
 }
 
 main .contact label {
@@ -230,8 +236,6 @@ main .contact textarea {
     text-transform: uppercase;
     border: 2px solid black;
     border-radius: 2px;
-    margin: 0 auto;
-    position: relative;right: 500px;
     margin-top: 10px;
     
 }
@@ -255,4 +259,10 @@ footer {
     padding: 10px 0;
     color: black;
     margin-right: 50px;
+}
+
+.test{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
