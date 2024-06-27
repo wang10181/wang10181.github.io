@@ -66,13 +66,13 @@ body{
 header {
     background-image: url("../images/lone-starfish-wide.jpg");
     background-size: cover;
+    background-position:center;
     width: 70%;
     height: 300px;
     display: flex;
     color: white;
     justify-content: center;
     align-items: center;
-    position: relative;left:244px;
     font-size: 60px;
     margin: 0 auto;
 }
@@ -87,12 +87,15 @@ header {
     padding-bottom: 25px;
     margin-bottom: 20px;
 }
+
+/* navation setting */
 .naviga{
     font-weight: bolder;
     color: black;
     font-family: serif;
     text-decoration: none;
     text-align: center;
+    justify-content: center;
 
 }
 /* image setting in the first paragraph */
@@ -123,7 +126,9 @@ header h1 {
     color: #333;
 }
 
-/* Navigation settings */
+
+/* navigation lines setting  */
+/* Navigation content */
 nav ul {
     list-style: none;
     padding: 0;
@@ -137,7 +142,7 @@ nav ul li{
 }
 
 
-/* navigation lines setting  */
+
 nav ul li a {
   
     /* text-align: center; */
