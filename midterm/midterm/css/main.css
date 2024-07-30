@@ -200,7 +200,7 @@ main .facts ul {
     margin-top: 20px;
     line-height: 1.2;
 }
-
+/* disign for the form */
 main .contact form {
     display: flex;
     flex-direction: column;
