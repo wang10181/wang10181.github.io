@@ -1,0 +1,359 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styles applied above 760px  */  /* Container */
+@media screen and (min-width: 760px){
+    .body{
+        font-family:"Open Sans", sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+    
+        
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        
+       
+}
+}
+
+
+/* Header */
+header {
+    background: #222;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:  0px solid;
+}
+
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+.logo  {
+	display: flex;
+	justify-content: center;
+	align-items:center; 
+    
+}
+.logo img{
+	height: 60px;
+	margin-left: 35px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 35px;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c78c06;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #c78c06;
+	color:#222
+}
+
+.search {
+    display: flex;
+    margin: 0 0 0px 110px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search input {
+    width: 125px;
+	height: 25px;
+    border: 2px solid #000;
+    border-radius: 0px;
+}
+
+.search button {
+	height: 29px;
+	width: 25px;
+	border-left: none;
+    
+    background-color: #000;
+	border: 2px solid #c78c06;
+    
+}
+
+.search button:hover {
+    background-color: #aaa;
+}
+
+.wrapper1 {
+    width: 80%;
+    margin: 0px 110px 0px 110px;
+    
+}
+   
+.welcome{
+    
+    display: flex;
+    background-image: url(../images/main-banner.jpg);
+    align-self: center;
+    background-color: black ;opacity: 0.9;
+    padding: 3rem;
+    
+    align-items: center;
+}
+.welcome h1 {
+    color: white;
+    font-size: 60px;
+    padding: 60px ;
+
+}
+.welcome p {
+    color: white;
+    padding-bottom: 30px;
+
+}
+
+.button {
+    
+    align-items: flex-end;
+    padding: 15px;
+    background-color: #daa520;
+    border: none;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000;
+}
+/* This is the 3rd part ----About us  setting  */
+.aboutus{
+    background-color:#ffe6ac;
+  font-size: 30px;
+   
+}
+.aboutus p{
+    height: 200px;
+    margin-right: 200px;
+    font-size: smaller;
+  
+   
+}
+.aboutus h2{
+    margin-left:500px ;
+    font-weight: bold;
+    font-size: larger;
+    padding: 0rem;
+
+}
+
+.aboutus img{
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-left: 100px;
+    padding-right: 25px;
+   
+    
+}
+.wrapper1{
+    width: 80%
+}
+/* This is the 4th part ----OUr services  setting  */
+
+.ourservices h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+.service-block img{
+    max-width: 100%;
+  }
+
+
+.buttonblock{
+    height: 29px;
+	width: 25px;
+	border-left: none;
+    color: white;
+    background-color: #000;
+    text-decoration: none;
+
+}
+/* This is using grid to arrange the areas */
+
+
+.field-block {
+    padding: 10px;
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    margin-left: 150px;
+    
+       
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:1fr fr fr;
+    gap: 20px;
+}
+
+.service-grid .service-block:nth-child(3){
+    grid-column:1/2;
+    grid-row: 2/3; }
+
+.service-grid .service-block:nth-child(4){ grid-column:2/3;
+    grid-row: 2/3;
+
+}
+.service-grid .service-block:nth-child(5) {
+    grid-column:3/4;
+    grid-row: 2/3;
+}
+
+.service-grid .service-block:nth-child(1)
+{
+    grid-column: 1/2;
+grid-row: 1/2; 
+      
+}
+.service-grid .service-block:nth-child(2) {
+    grid-column: span 2;
+grid-row: 1/2; 
+}
+
+.service-block {
+    
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.service-block img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-block h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.service-block p {
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.buttonblock {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    padding: 30px 120px 30px ;
+    
+}
+
+.buttonblock:hover {
+    background-color: #009eb3;
+}
+.service-block{
+    background-color: #ffe6ac;
+}
+/* This part is to design the -our vision- part  */
+.vision{
+    background-image: url(../images/vision.jpg);
+    font-size: 35px;
+    color: white;
+    background-position: 40% 40%;
+}
+.buttonblock2{
+
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 10px 30px ;
+}
+.vision h2{
+    font-size: 60px;
+    padding: 25px;
+}
+.vision p{
+    padding: 20px;
+
+}
