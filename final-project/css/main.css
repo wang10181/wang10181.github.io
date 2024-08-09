@@ -47,12 +47,14 @@ table {
 	border-spacing: 0;
 }
 
-/* Styles applied above 760px  */  /* Container */
+/* Add a min-width media query for the screen size of 760px and above */
+/* Use the 'Open Sans' Google font for the webpage */
+
 @media screen and (min-width: 760px){
     .body{
         font-family:"Open Sans", sans-serif;
         line-height: 1.6;
-        color: #333;
+        color: #222;
         margin: 0;
     
         
@@ -64,9 +66,12 @@ table {
        
 }
 }
+/* The maximum width of the container is 1200px */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;}
 
-
-/* Header */
+/* this part is designed for the Header */
 header {
     background: #222;
     padding-top: 30px;
@@ -75,7 +80,7 @@ header {
 }
 
 
-/* Header Styles */
+/* this part is designed for the Header Styles */
 header {
     display: flex;
     justify-content: space-between;
@@ -135,7 +140,7 @@ nav ul li a:hover {
     border: 2px solid #000;
     border-radius: 0px;
 }
-
+/* this part is designed for the button style */
 .search button {
 	height: 29px;
 	width: 25px;
@@ -155,7 +160,7 @@ nav ul li a:hover {
     margin: 0px 110px 0px 110px;
     
 }
-   
+/* this part is designed for the welcome part   */
 .welcome{
     
     display: flex;
@@ -247,23 +252,25 @@ nav ul li a:hover {
 
 
 .field-block {
-    padding: 10px;
+    padding: 50px;
     width: 80%;
     align-content: center;
     align-items: center;
     align-self: center;
-    margin-left: 150px;
+    margin-left: 60px;
     
        
 }
 
+/* Use of CSS Grid propertie to arrange the part of our service  */
+
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows:1fr fr fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:1fr 1fr;
     gap: 20px;
 }
-
+/* this part arranging for the nth-child of the grip */
 .service-grid .service-block:nth-child(3){
     grid-column:1/2;
     grid-row: 2/3; }
@@ -300,10 +307,8 @@ grid-row: 1/2;
     height: auto;
     margin-bottom: 10px;
 }
-
+/* this part is designed for the header and text content style of the grid */
 .service-block h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
     font-size: 30px;
     font-weight: bold;
     text-align: left;
@@ -335,25 +340,275 @@ grid-row: 1/2;
 /* This part is to design the -our vision- part  */
 .vision{
     background-image: url(../images/vision.jpg);
-    font-size: 35px;
+    font-size: 65px;
     color: white;
     background-position: 40% 40%;
+   
 }
 .buttonblock2{
-
     display: inline-block;
     background-color: #222;
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    padding: 10px 10px 30px ;
+    padding: 10px 10px 5px ;
 }
 .vision h2{
     font-size: 60px;
     padding: 25px;
+    margin: 0;
 }
 .vision p{
-    padding: 20px;
+    font-size: 20px;
+    margin: 0; 
 
+}
+/*this part is designed for the team two people General Styles */
+.wrapper3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+    margin: 0;
+}
+
+.team1 {
+    width: 100%;
+    margin: 0; /* Reset margin */
+    padding: 0;
+}
+
+.team1 h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+
+/* this part is designed for the Individual Team Member Styles */
+.john, .team2 {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: #ffe6ac;
+   
+}
+/* this part is designed for the head and text content */
+.wrapper3 h2{
+    font-weight: bold;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: justify;
+  
+
+}
+
+.john h3{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 1rem;
+
+}
+.team2 h3{
+    font-weight: bold;
+    font-size: 28px;
+    padding: 1rem;
+
+}
+
+
+/* Use of CSS Flexbox properties for the disigning of the team part */
+
+.john p:first-of-type, .team2 p:first-of-type {
+    text-decoration: underline;
+    text-decoration-color: #c78c06;
+    font-weight: bold;
+}
+
+
+.john p{
+    
+    font-size: 24px;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    
+    
+}
+.team2 p{
+    
+    font-size: 24px;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    
+}
+
+
+/* this part is designed for the Image Styles */
+.john img, .team2 img {
+    width: 465px;
+    height: 350px;
+   
+}
+
+/* this part is designed for the  Text Styles */
+.john div, .team2 div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* this part is designed for the Reverse layout for second team member */
+.team2 {
+    flex-direction: row-reverse;
+}
+
+/* this part is designed for the Media Queries only for this part for Responsiveness */
+@media (max-width: 768px) {
+    .john, .team2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .john img, .team2 img {
+        margin: 0 0 10px 0;
+    }
+
+    .team2 {
+        flex-direction: column;
+    }
+}
+
+/* This is css code for the "contact us" form and "location" part  */
+.wrapper4 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+.contact h2{
+    font-weight: bold;
+    font-size: 30px;
+}
+.location h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+.location {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* this is css code for the form style  */
+.form1 {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+/* This is css code for the  button style design */
+button {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #222;
+    color: #c78c06;
+}
+
+/* This is css code for the table-----Hours of operation table */
+.table {
+    margin-top: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #ffe6ac;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+ /* Add margin to the right of the form to space it from the map */
+form {
+    margin-right: 20px;
+}
+
+.location iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+   
+}
+
+/* this is setting css code for the footer  */
+.footer{
+    background-color: #222 ;
+    font-size: 20px;
+    color: #c78c06;
+    padding: 30px;
 }
