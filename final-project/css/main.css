@@ -466,7 +466,7 @@ grid-row: 1/2;
 }
 
 /* this part is designed for the Media Queries only for this part for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     .john, .team2 {
         flex-direction: column;
         text-align: center;
