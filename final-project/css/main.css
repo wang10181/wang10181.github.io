@@ -456,7 +456,7 @@ grid-row: 1/2;
    
 }
 
-/* this part is designed for the  Text */
+/* this part is designed for the text part using flex */
 .john div, .team2 div {
     display: flex;
     flex-direction: column;
@@ -516,14 +516,14 @@ h2, h3 {
 
 form {
     flex: 1;
-    min-width: 300px;
-    max-width: 450px;
+    min-width: 295px;
+    max-width: 445px;
 }
 
 .location {
     flex: 1;
-    min-width: 300px;
-    max-width: 450px;
+    min-width: 295px;
+    max-width: 445px;
     padding: 0 10px 10px 40px;
 }
 
@@ -534,14 +534,14 @@ form {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -549,10 +549,7 @@ textarea {
     font-size: 16px;
 }
 
-textarea {
-    height: 100px;
-    resize: vertical;
-}
+
 /* This is css code for the  button style design */
 button {
     background-color: #222;
@@ -575,18 +572,24 @@ button:hover {
 
 
 /* This is css code for the table-----Hours of operation table */
+/* set up the table style */
+
 .table {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 80px;
+
 }
 .table h2{
     font-weight: bold;
     font-size: 30px;
+    margin-left: 60px;
 }
 
 table {
-    width: 100%;
+    width: 85%;
     border-collapse: collapse;
+    align-self: center;
 }
 
 th, td {
@@ -613,10 +616,9 @@ form {
 }
 
 .location iframe {
-    width: 100%;
+    width: 90%;
     height: 300px;
-    border: none;
-   
+     
 }
 
 /* this is setting css code for the footer  */
