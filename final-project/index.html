@@ -36,7 +36,7 @@
     </header>
     <!-- first content part of the website -->
     
-    <div class="wrapper ">
+    <div class="wrapper1">
         
         <section class="welcome">
         <div>
@@ -129,29 +129,35 @@
     </section>
 
          <!-- the contact sheet with forms and location -->
-    <div>
-        <section class="contact">
-        <div class="wrapper4">
-            <h2>Contact Us</h2>
-            <form>
-                <div class="form1">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name">
+         <div>
+            <section class="contact">
+                <div class="wrapper4">
+                    <h2>Contact Us</h2>
+                    <div class="flex-container">
+                        <form>
+                            <div class="form1">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+                            <div class="form1">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <div class="form1">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"></textarea>
+                            </div>
+                            <button type="submit">Send</button>
+                        </form>
+                        <div class="location">
+                            <h3>Location</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22423.393115677118!2d-75.68533207658695!3d45.37052583916696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce08bc971a1561%3A0xdaf7f3194d049352!2sThe%20Home%20Depot!5e0!3m2!1szh-CN!2sca!4v1722375936225!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                 </div>
-                <div class="form1">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-                </div>
-                <div class="form1">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
-            <div class="location">
-                <h3>Location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22423.393115677118!2d-75.68533207658695!3d45.37052583916696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce08bc971a1561%3A0xdaf7f3194d049352!2sThe%20Home%20Depot!5e0!3m2!1szh-CN!2sca!4v1722375936225!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            </section>
+        </div>
+
             <!-- hours of operation sheet part -->
             <div class="table">
                 <h2>Hours of operation</h2>
@@ -175,7 +181,6 @@
                 </table>
             </div>
         </div>
-        </section>
     </div>
     <!-- the footer content  -->
     <footer class="footer">
@@ -184,7 +189,5 @@
             <p>All images are taken from Unsplash</p>
         </div>
     </footer>
- </div>
- </div>
 </body>
 </html>
