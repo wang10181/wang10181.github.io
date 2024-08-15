@@ -68,18 +68,12 @@ table {
         padding: 0 20px;
     }
     
-    /* Header */
-    /* header {
-        background-color: #222;
-        color: #c78c06;
-        padding: 10px 0;
-        text-align: center;
-    } */
-    
+   
     /* Set header background color to #c78c06 */
+    /* Make the width of the container as long as the page */
     header .logo {
         background-color: #c78c06; 
-        width: 100%; /* Make the width of the container as long as the page */
+        width: 100%; 
        
     }
     
@@ -103,7 +97,7 @@ table {
   
 
 
-
+/* set up fot the column of the home */
     header nav ul li:first-child a {
         
         background-color: #c78c06;
@@ -130,7 +124,8 @@ table {
         border: 2px solid #c78c06;
     }
     
-    /* Welcome Section */
+    /* This is the part of Welcome Section */
+    /* Using two box to achieve the effects */
    
 .box1{
         width: 100%;
@@ -180,7 +175,7 @@ table {
     
  
     
-    /* About Us Section */
+    /* this is the part of About Us including its img */
 .aboutus {
         padding: 50px 20px;
         text-align: left;
@@ -204,7 +199,7 @@ table {
         line-height: 2rem;
     }
     
-    /* Services Section */
+    /* this is the part of Services jsing grid to achieve the arrangement of each part */
 .ourservices {
         padding: 50px 20px;
         background-color: #fff;
@@ -270,7 +265,7 @@ table {
        
     }
     
-    /* Vision Section */
+    /* this is th part of our Vision adn its picture */
 .vision {
         background-image: url("../images/vision.jpg");
         background-position: 60% 40%;
@@ -306,7 +301,7 @@ table {
         background-color:#c78c06;
     }
     
-    /* Team Section */
+    /* this is the part of Team Section using flex to change the position and some basic settings*/
 .team1 {
         padding: 50px 20px;
         
@@ -372,7 +367,7 @@ table {
         
     }
     
-    /* Contact Section */
+    /* this is the part of Contact including its forms basic */
 .contact {
         padding: 50px 20px;
      
@@ -515,6 +510,7 @@ table {
             padding: 10px 20px;
 
         }
+        /* this is designing the logo and the navagation */
         .logo{   
             display: flex;
             justify-content: flex-start;}
