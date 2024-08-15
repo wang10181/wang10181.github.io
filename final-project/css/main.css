@@ -50,581 +50,989 @@ table {
 
 
 
-/* Add a min-width media query for the screen size of 760px and above */
-/* Use the 'Open Sans' Google font for the webpage */
 
-@media screen and (min-width: 760px){
-    .body{
+/* this is designing for the part that is below 760px */
+/* Mobile-first approach in the styling */
+
+  
+.body{
         font-family:"Open Sans", sans-serif;
         line-height: 1.6;
         color: #222;
-        margin: 0;
+        margin: 0;}
     
-        
-    }
-    .container {
+    /* Container */
+.container {
         max-width: 1200px;
         margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    /* Header */
+    /* header {
+        background-color: #222;
+        color: #c78c06;
+        padding: 10px 0;
+        text-align: center;
+    } */
+    
+    /* Set header background color to #c78c06 */
+    header .logo {
+        background-color: #c78c06; 
+        width: 100%; /* Make the width of the container as long as the page */
+       
+    }
+    
+    /* Ensure the image does not exceed the container's width */
+ 
+    header nav ul li a {
+        color: #c78c06;
+        text-decoration: none;
+        display: flex;
+        padding: 15px;
+         list-style: none;
+         flex-direction: column;
+         justify-items: center;
+         justify-content: space-evenly;
+        font-size: 25px;
+        background-color: #222;
+        color: #c78c06;
         
-       
-}
-}
-/* The maximum width of the container is 1200px */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;}
-
-/* this part is designed for the Header */
-header {
-    background: #222;
-    padding-top: 30px;
-    border-bottom:  0px solid;
-}
-
-
-/* /* this part is designed for the Header Styles , using flex to design for the header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-    padding: 10px 20px;
-}
-
-.logo  {
-	display: flex;
-	justify-content: center;
-	align-items:center; 
-    
-}
-.logo img{
-	height: 60px;
-	margin-left: 35px;
-
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 35px;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 15px 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #c78c06;
-    padding: 10px;
-}
-
-nav ul li a:hover {
-    background-color: #c78c06;
-	color:#222
-}
-
-.search {
-    display: flex;
-    margin: 0 0 0px 110px;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.search input {
-    width: 125px;
-	height: 25px;
-    border: 2px solid #000;
-    border-radius: 0px;
-}
-/* this part is designed for the button style */
-.search button {
-	height: 29px;
-	width: 25px;
-	border-left: none;
-    
-    background-color: #000;
-	border: 2px solid #c78c06;
-    
-}
-
-.search button:hover {
-    background-color: #aaa;
-}
-
-.wrapper1 {
-    
-    margin: 0px 110px 0px 110px;
-    
-}
-/* this part is designed for the welcome part   */
-.welcome{
-    
-    display: flex;
-    background-image: url(../images/main-banner.jpg);
-    align-self: center;
-    background-color: black ;opacity: 0.9;
-    padding: 3rem;
-    background-size: cover;
-    align-items: center;
-}
-.welcome h1 {
-    color: white;
-    font-size: 60px;
-    padding: 60px ;
-
-}
-.welcome p {
-    color: white;
-    padding-bottom: 30px;
-
-}
-
-.button {
-    
-    align-items: flex-end;
-    padding: 15px;
-    background-color: #daa520;
-    border: none;
-    font-size: 22px;
-    text-decoration: none;
-    color: #000;
-}
-/* This is the 3rd part ----About us  setting  */
-.aboutus{
-    background-color:#ffe6ac;
-  font-size: 30px;
-   
-}
-.aboutus p{
-    height: 200px;
-    margin-right: 200px;
-    font-size: smaller;
-  
-   
-}
-.aboutus h2{
-    margin-left:500px ;
-    font-weight: bold;
-    font-size: larger;
-    padding: 0rem;
-
-}
-
-.aboutus img{
-    width: 300px;
-    height: 200px;
-    float: left;
-    margin-left: 100px;
-    padding-right: 25px;
-   
-    
-}
-
-/* This is the 4th part ----OUr services  setting  */
-
-.ourservices h2{
-    font-size: 40px;
-    font-weight: bold;
-    padding: 1rem;
-}
-
-.service-block img{
-    max-width: 100%;
-  }
-
-
-.buttonblock{
-    height: 29px;
-	width: 25px;
-	border-left: none;
-    color: white;
-    background-color: #000;
-    text-decoration: none;
-
-}
-/* This is using grid to arrange the areas */
-
-
-.field-block {
-    padding: 50px;
-    width: 80%;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-    margin-left: 60px;
-    
-       
-}
-
-/* Use of CSS Grid propertie to arrange the part of our service  */
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:1fr 1fr;
-    gap: 20px;
-}
-
-
-/* this part is arranging for the nth-child of the grip */
-.service-grid .service-block:nth-child(3){
-    grid-column:1/2;
-    grid-row: 2/3; }
-
-.service-grid .service-block:nth-child(4){ grid-column:2/3;
-    grid-row: 2/3;
-
-}
-.service-grid .service-block:nth-child(5) {
-    grid-column:3/4;
-    grid-row: 2/3;
-}
-
-.service-grid .service-block:nth-child(1)
-{
-    grid-column: 1/2;
-grid-row: 1/2; 
-      
-}
-.service-grid .service-block:nth-child(2) {
-    grid-column: span 2;
-grid-row: 1/2; 
-}
-
-.service-block {
-    
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-
-.service-block img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* this part is designed for the header and text content style of the grid */
-.service-block h3 {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: left;
-
-}
-
-.service-block p {
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 15px;
-}
-
-.buttonblock {
-    display: inline-block;
-    background-color: #222;
-    color: white;
-    text-decoration: none;
-    font-size: larger;
-    padding: 30px 120px 30px ;
-    
-}
-
-
-.service-block{
-    background-color: #ffe6ac;
-}
-/* This part is to design the -our vision- part  */
-.vision{
-    background-image: url(../images/vision.jpg);
-    font-size: 65px;
-    color: white;
-    background-position: 40% 40%;
-   
-}
-.buttonblock2{
-    display: inline-block;
-    background-color: #222;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px 10px 5px ;
-}
-.vision h2{
-    font-size: 60px;
-    padding: 25px;
-    margin: 0;
-    color:white
-}
-.vision p{
-    font-size: 20px;
-    margin: 0; 
-    padding: 20px;
-
-}
-/*this part is designed for the team two people General Styles */
-.wrapper3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2px;
-    margin: 0;
-}
-
-.team1 {
-    width: 100%;
-    margin: 0; /* Reset margin */
-    padding: 0;
-}
-
-.team1 h2 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-    padding: 0;
-}
-
-
-/* this part is designed for the Individual Team Member Styles */
-.john, .team2 {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    background-color: #ffe6ac;
-   
-}
-/* this part is designed for the head and text content */
-.wrapper3 h2{
-    font-weight: bold;
-    font-size: 40px;
-    font-weight: bold;
-    padding: 2rem;
-    text-align: justify;
-  
-
-}
-
-.john h3{
-    font-weight: bold;
-    font-size: 30px;
-    padding: 1rem;
-
-}
-.team2 h3{
-    font-weight: bold;
-    font-size: 28px;
-    padding: 1rem;
-
-}
-
-
-/* Use of CSS Flexbox properties for the disigning of the team part */
-
-.john p:first-of-type, .team2 p:first-of-type {
-    text-decoration: underline;
-    text-decoration-color: #c78c06;
-    font-weight: bold;
-}
-
-
-.john p{
-    
-    font-size: 24px;
-    padding: 1rem;
-    padding-bottom: 1rem;
-    
-    
-}
-.team2 p{
-    
-    font-size: 24px;
-    padding: 1rem;
-    padding-bottom: 1rem;
-    
-}
-
-
-/* this part is designed for the Image Styles */
-.john img, .team2 img {
-    width: 465px;
-    height: 350px;
-   
-}
-
-/* this part is designed for the text part using flex */
-.john div, .team2 div {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-/* this part is designed for the Reverse layout for second team member */
-.team2 {
-    flex-direction: row-reverse;
-}
-
-/* this part is designed for the Media Queries only for this part for Responsiveness */
-@media (max-width: 760px) {
-    .john, .team2 {
-        flex-direction: column;
         text-align: center;
     }
+  
 
-    .john img, .team2 img {
-        margin: 0 0 10px 0;
+
+
+    header nav ul li:first-child a {
+        
+        background-color: #c78c06;
+        color: #222; /* Change the text color to make it readable on yellow background */
+      
     }
+    
+    header .search {
+        padding: 30px;
+        background-color: #222;
+    }
+    
+    header .search input {
+        padding: 5px;
+        font-size: 16px;
+        width: 450px;
+    }
+    
+    header .search button {
+        background-color: #222; opacity: 0.9;
+        padding: 5px;
+        font-size: 16px;
+        background-color: #222;
+        border: 2px solid #c78c06;
+    }
+    
+    /* Welcome Section */
+   
+.box1{
+        width: 100%;
+        height: 500px;  
+        background-image: url("../images/main-banner.jpg");
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+        background-position: center;
+      }
 
-    .team2 {
+.box2{
+        position: absolute;
+        top:499px;
+        box-sizing: border-box;
+        width: 94%;
+        height: 370px;
+        background-color: rgba(34, 34, 34, 0.6); 
+      }
+
+
+
+    
+.wrapper1 .welcome h1 {
+        font-size: 4.5rem;
+        margin-bottom: 20px;
+        color: white;
+    }
+    
+.wrapper1 .welcome p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        padding:22px;
+        color: white;
+    }
+    
+.wrapper1 .welcome .button {
+        background-color: #c78c06;
+        color: #222;
+        padding: 20px 20px;
+        justify-content: center;
+        justify-items: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        margin-left: 20px;
+    }
+    
+ 
+    
+    /* About Us Section */
+.aboutus {
+        padding: 50px 20px;
+        text-align: left;
+        background-color: #ffe6ac;
+    }
+    
+.aboutus h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+.aboutus img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+.aboutus p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    
+    /* Services Section */
+.ourservices {
+        padding: 50px 20px;
+        background-color: #fff;
+    }
+    
+.ourservices h2 {
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+.service-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        justify-items: center;
+    }
+    
+.service-block {
+        background-color: #ffe6ac;
+      
+        border-radius: 1px;
+        text-align: left;
+        padding-bottom: 60px;
+       
+    }
+    
+.service-block img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+.service-block h3 {
+        margin-bottom: 25px;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-left:30px;
+    }
+    
+.service-block p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 40px;
+        margin-left:30px;
+    }
+    
+.service-block .buttonblock {
+        background-color: #222;
+        color: white;
+        text-decoration: none;   
+        font-size: 1.5rem;
+        padding: 23px;  
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+       
+    }
+    
+.service-block .buttonblock:hover {
+        background-color:#c78c06;
+       
+    }
+    
+    /* Vision Section */
+.vision {
+        background-image: url("../images/vision.jpg");
+        background-position: 60% 40%;
+        height: fit-content;
+        padding-bottom:60px ;
+    }
+    
+.vision h2 {
+        padding: 30px;
+        font-size: 3rem;
+        color: white;
+    }
+    
+.vision p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: white;
+        padding: 20px;
+    }
+    
+.vision .buttonblock2 {
+        background-color: #222;opacity: 0.7;
+        color: white;
+        padding: 22px;
+        margin-left: 30px;
+        text-decoration: none;   
+        font-size: 1.5rem;
+        border: 2px solid #000;
+        border-color: #c78c06;
+    }
+    
+.vision .buttonblock2:hover {
+        background-color:#c78c06;
+    }
+    
+    /* Team Section */
+.team1 {
+        padding: 50px 20px;
+        
+    
+    }
+    
+.team1 h2 {
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+.team2{
+        background-color: #ffe6ac;
+    }
+.john{
+        background-color: #ffe6ac;
+    }
+.team1 .john, .team1 .team2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 10px;
         flex-direction: column;
     }
-}
+    
+.team1 img {
+        width: 100%;
+        height: auto;
+    
+    }
+  
 
-/* This is css code for the "contact us" form and "location" part  */
-.wrapper4 {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
+.team1 h3 {
+        margin-bottom: 2px;
+        text-align: left;
+        margin-bottom: 15px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
-h2, h3 {
-    margin-bottom: 20px;
-    color: #222;
-}
-
-
-
+.john p:first-of-type, .team2 p:first-of-type {
+    font-weight: bold;
+    border-bottom: 1px solid #c78c06; 
+    
+    display: inline-block; /* Ensure the underline spans full width */
+    width: 100%;
+    }
+    
+    
+.john p{
+        
+        font-size: 24px;
+        
+        padding-bottom: 2rem;
+        
+        
+    }
+.team2 p{
+        
+        font-size: 24px;
+        padding-bottom: 2rem;
+        
+    }
+    
+    /* Contact Section */
 .contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-}
-.contact h2{
-    font-weight: bold;
-    font-size: 30px;
-}
-/* the css design code for the location and map */
-.location h3{
-    font-weight: bold;
-    font-size: 30px;
-}
-
-form {
-    flex: 1;
-    min-width: 295px;
-    max-width: 445px;
-}
-
-.location {
-    flex: 1;
-    min-width: 295px;
-    max-width: 445px;
-    padding: 0 10px 10px 40px;
-}
-
-/* this is css code for the form style  */
-.form1 {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-
-/* This is css code for the  button style design */
-button {
-    background-color: #222;
-    color: #c78c06;
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #222;
-    color: #c78c06;
-}
-/* this is making flex arrangement for the contact form and the location part */
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-}
-
-
-/* This is css code for the table-----Hours of operation table */
-/* set up the table style */
-
-.table {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 80px;
-
-}
-.table h2{
-    font-weight: bold;
-    font-size: 30px;
-    margin-left: 60px;
-}
-
-table {
-    width: 85%;
-    border-collapse: collapse;
-    align-self: center;
-}
-
-th, td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #222;
-}
-
-th {
-    background-color: #ffe6ac;
-}
-
-tbody tr:nth-child(odd) {
-    background-color: #f9f9f9;
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
- /* Add margin to the right of the form to space it from the map */
-form {
-    margin-right: 20px;
-}
-
-.location iframe {
-    width: 90%;
-    height: 300px;
+        padding: 50px 20px;
      
-}
+    }
+    
+.contact h2 {
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+.wrapper4 h3{
+        text-align: left;
+        margin-bottom: 12px;
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 20px;
 
-/* this is setting css code for the footer  */
+    }
+    
+.contact .form1 {
+        margin-bottom: 20px;
+    }
+    
+.contact .form1 label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+.contact .form1 input, .contact .form1 textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 4px;
+        border: 1px solid #222;
+    }
+    
+.contact .form1 textarea {
+        height: 150px;
+    }
+    
+.contact button {
+        padding: 10px 20px;
+        background-color: #222;
+        color: #c78c06;
+        border: none;
+        font-size: 1.4rem;
+        font-weight: bold;
+        cursor: pointer;
+       
+    }
+    
+    
+    /* Hours of Operation Section */
+.table {
+        padding: 50px 20px;
+            }
+    
+.table h2 {
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+.table table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        text-align: left;
+    }
+    
+.table th, .table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+    
+.table th {
+        background-color: #ffe6ac;
+        color: #222;
+        justify-content: center;
+        text-align: center;
+    }
+.location h3{  
+        text-align: left;
+        margin-bottom: 30px;
+        font-size: 3rem;
+        font-weight: bold;
+        
+    }
+   
+    /* Apply flex to the parent container of the contact and hours sections */
+.contact-hours-wrapper {
+        display: flex;
+        flex-direction: column-reverse; /* Reverse the order */
+    }
+
+
+    
+    /* this is my footer setting for Footer */
 .footer{
-    background-color: #222 ;
-    font-size: 20px;
-    color: #c78c06;
-    padding: 20px;
+        background-color: #222 ;
+        font-size: 20px;
+        color: #c78c06;
+        padding: 20px;
+        line-height: 2rem;
+    }
+
+
+
+
+
+
+
+/* This is the second part */
+/* Add a min-width media query for the screen size of 760px and above */
+/* Use the 'Open Sans' Google font for the webpage */
+
+
+
+    @media (min-width: 760px) {
+        .body{
+            font-family:"Open Sans", sans-serif;
+            line-height: 1.6;
+            color: #222;
+            margin: 0;   
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .container header{   
+            background: #222;
+            padding-top: 30px;
+            border-bottom:  0px solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222;
+            padding: 10px 20px;
+
+        }
+        .logo{   
+            display: flex;
+            justify-content: flex-start;}
+        .logo img{
+            height: 60px;
+        margin-left: 35px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #c78c06;
+            padding: 10px;
+            font-size: 20px;
+    
+        }
+        nav ul li a:hover {
+            background-color: #c78c06;
+            color:#222
+        }
+        header .search {
+            padding: 30px;
+            background-color: #222;
+        }
+        
+        header .search input {
+            padding: 3px;
+            font-size: 17px;
+            width: 150px;
+            height: 35px;
+        }
+            /* this part is designed for the button style */
+        .search button{
+            height: 39px;
+            width: 40px;
+            border-left: none;
+            margin-top: 5px;
+            background-color: #000;
+            border: 2px solid #c78c06;
+        }
+        .search button:hover{
+            background-color:#c78c06;
+        }
+        .header{
+            display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px;
+
+        }
+        header .navaga ul{
+            display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 20px;
+
+        }
+        header .navaga ul li{
+            margin: 0 15px;
+        }
+        header .search{
+            display: flex;
+        }
+        header nav ul li:first-child a{
+            background-color: #222;
+            color:#c78c06
+        }
+        header .logo{
+            background-color: #222;
+        }
+         /* this part is designed for the welcome part   */
+         .box1{
+            width: 100%;
+            height: 500px;  
+            background-image: url("../images/main-banner.jpg");
+            background-size: 100% 100%; 
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+    
+          .box2{
+            position: absolute;
+            margin-left: 87px;
+            top:199px;
+            box-sizing: border-box;
+            width: 50%;
+            height: 370px;
+            background-color: rgba(34, 34, 34, 0.6); 
+          }
+    
+    
+    
+        
+        .wrapper1 .welcome h1 {
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+            color: white;
+            padding: 15px;
+        }
+        
+        .wrapper1 .welcome p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            padding:22px;
+            color: white;
+        }
+        
+        .wrapper1 .welcome .button {
+            background-color: #c78c06;
+            color: #222;
+            padding: 20px 20px;
+            justify-content: center;
+            justify-items: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.4rem;
+            margin-left: 20px;
+        }
+        /* This is the 3rd part ----About us  setting  */
+        .aboutus{
+            background-color:#ffe6ac;
+       
+        }
+    
+    
+        .aboutus h2 {
+          
+            font-weight: bold;
+            font-size: 40px;
+          padding: 14px;
+        }
+        .aboutus p {
+            
+            font-size: 26px; 
+            color: #222; 
+            line-height: 1.6; /* Adjust the line height for better readability */
+        }
+        
+        .aboutus img{
+            width: 390px;
+            height: 230px;
+            float: left;
+            margin-left: 100px;
+            padding-right: 25px;
+            padding-top: 5px;
+           
+            
+        }
+        
+        /* This is the 4th part ----OUr services  setting  */
+        
+        .ourservices h2{
+            font-size: 40px;
+            font-weight: bold;
+            padding: 1rem;
+        }
+        
+        .service-block img{
+            max-width: 100%;
+          }
+        
+        
+        .buttonblock{
+            border-left: none;
+            color: white;
+            background-color: #000;
+            text-decoration: none;
+        
+        }
+        /* This is using grid to arrange the areas */
+        
+        
+        .field-block {
+            padding: 50px;
+            width: 80%;
+            align-content: center;
+            align-items: center;
+            align-self: center;
+            margin-left: 60px;
+            
+               
+        }
+        
+        /* Use of CSS Grid propertie to arrange the part of our service  */
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows:1fr 1fr;
+            gap: 20px;
+        }
+        
+        
+        /* this part is arranging for the nth-child of the grip */
+        .service-grid .service-block:nth-child(3){
+            grid-column:1/2;
+            grid-row: 2/3; }
+        
+        .service-grid .service-block:nth-child(4){ grid-column:2/3;
+            grid-row: 2/3;
+        
+        }
+        .service-grid .service-block:nth-child(5) {
+            grid-column:3/4;
+            grid-row: 2/3;
+        }
+        
+        .service-grid .service-block:nth-child(1)
+        {
+            grid-column: 1/2;
+        grid-row: 1/2; 
+              
+        }
+        .service-grid .service-block:nth-child(2) {
+            grid-column: span 2;
+        grid-row: 1/2; 
+        }
+        
+        .service-block {
+            
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        .service-block img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
+        /* this part is designed for the header and text content style of the grid */
+        .service-block h3 {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+        
+        }
+        
+        .service-block p {
+            margin-bottom: 10px;
+            text-align: left;
+            font-size: 15px;
+        }
+        
+        .buttonblock {
+            display: inline-block;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            font-size: larger;
+            padding: 30px 120px 30px ;
+            
+        }
+        
+        
+        .service-block{
+            background-color: #ffe6ac;
+        }
+        /* This part is to design the -our vision- part  */
+        .vision{
+            background-image: url(../images/vision.jpg);
+            font-size: 65px;
+            color: white;
+            background-position: 40% 40%;
+           
+        }
+        .buttonblock2{
+            display: inline-block;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            text-align: center;
+            padding: 10px 10px 5px ;
+        }
+        .vision h2{
+            font-size: 60px;
+            padding: 25px;
+            margin: 0;
+            color:white
+        }
+        .vision p{
+            font-size: 20px;
+            margin: 0; 
+            padding: 20px;
+        
+        }
+        /*this part is designed for the team two people General Styles */
+        .team1 {
+            padding: 50px 20px;
+        }
+        
+        .team1 h2 {
+            font-size: 3rem;
+            font-weight: bold;
+            padding: 20px 0;
+        }
+        
+        .team2, .john {
+            background-color: #ffe6ac;
+        }
+        
+        .team1 .john, .team1 .team2 {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0; /* Remove margin */
+            padding: 0; /* Remove padding */
+        }
+        
+        .team1 img {
+            width: 87%;
+            height: auto;
+        }
+        
+        .team1 h3 {
+            padding: 20px 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .john p:first-of-type, .team2 p:first-of-type {
+            font-weight: bold;
+            padding: 20px 0;
+            display: inline-block;
+            width: 90%;
+        }
+        
+        .john p, .team2 p {
+            font-size: 24px;
+            padding: 20px 0;
+        }
+        
+        /* Layout for john */
+        .team1 .john {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin: 0; /* Remove any margin */
+            padding: 0; /* Remove any padding */
+        }
+        
+        /* Layout for team2 */
+        .team1 .team2 {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            margin: 0; /* Remove any margin */
+            padding: 0; /* Remove any padding */
+        }
+        .wrapper4 {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h2, h3 {
+            margin-bottom: 20px;
+            color: #222;
+        }
+        
+        
+        
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .contact h2{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        /* the css design code for the location and map */
+        .location h3{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        
+        form {
+            flex: 1;
+            min-width: 295px;
+            max-width: 445px;
+        }
+        
+        .location {
+            flex: 1;
+         
+           padding-left: 20px;
+       
+        }
+        
+        /* this is css code for the form style  */
+        .form1 {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        
+        
+        /* This is css code for the  button style design */
+        button {
+            background-color: #222;
+            color: #c78c06;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+        }
+        
+        button:hover {
+            background-color: #222;
+            color: #c78c06;
+        }
+        /* this is making flex arrangement for the contact form and the location part */
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            align-content: space-between;
+        }
+        
+        
+        /* This is css code for the table-----Hours of operation table */
+        /* set up the table style */
+        
+        .table {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            margin-left: 80px;
+        
+        }
+        .table h2{
+            font-weight: bold;
+            font-size: 30px;
+            margin-left: 60px;
+        }
+        
+        table {
+            width: 85%;
+            border-collapse: collapse;
+            align-self: center;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #222;
+        }
+        
+        th {
+            background-color: #ffe6ac;
+        }
+        
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+         /* Add margin to the right of the form to space it from the map */
+        form {
+            margin-right: 20px;
+        }
+        
+        .location iframe {
+            width: 100%;
+            height: 300px;
+             
+        }
+        
+        /* this is setting css code for the footer  */
+        .footer{
+            background-color: #222 ;
+            font-size: 20px;
+            color: #c78c06;
+            padding: 20px;
+        }
+
+    
+        
+        
+            
+            
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+        
 }
